@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "can-example"
+version = "0.1.0"
+description = ""
+authors = ["Michael Maurer <mjmaurer777@gmail.com>"]
+readme = "README.md"
+
+[tool.poe.tasks]
+runexample = "python geomatch/r_entry_example.py"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.25.0"
+black = "^24.2.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
