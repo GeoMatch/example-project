@@ -18,4 +18,5 @@ Imports:
 Suggests: 
     devtools,
     nycflights13,
+    styler,
     testthat
