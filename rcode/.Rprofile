@@ -27,7 +27,7 @@ if (!interactive() && Sys.getenv("GEOMATCH_VERSION") == "dev") {
 }
 
 # Management scripts are only used interactively and depend on renv.
-if (interactive() && renv.opt.in) {
+if (interactive()) {
   source("renv/manage.R")
   cat("renv/manage.R Loaded\n")
 }
